@@ -242,6 +242,55 @@
                 </div>
             </div>
         </div>
+        
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @T("Plugins.Widgets.NivoSlider.Picture6")
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="Picture6Id_OverrideForStore" asp-input="Picture6Id" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="Picture6Id" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Picture6Id" />
+                        <span asp-validation-for="Picture6Id"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="Text6_OverrideForStore" asp-input="Text6" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="Text6" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Text6" />
+                        <span asp-validation-for="Text6"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="AltText6_OverrideForStore" asp-input="AltText6" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="AltText6" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AltText6" />
+                        <span asp-validation-for="AltText6"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="Link6_OverrideForStore" asp-input="Link6" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="Link6" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Link6" />
+                        <span asp-validation-for="Link6"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="form-group">

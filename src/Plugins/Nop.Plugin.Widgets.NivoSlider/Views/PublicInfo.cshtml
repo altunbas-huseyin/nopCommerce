@@ -69,6 +69,18 @@
 
             @await Html.PartialAsync("~/Plugins/Widgets.NivoSlider/Views/_PublicInfo.SliderLine.cshtml", dataSlide5)
         }
+        
+        @{
+            var dataSlide6 = new ViewDataDictionary(ViewData)
+            {
+                {"pictureUrl", Model.Picture6Url},
+                { "text", Model.Text6},
+                { "link", Model.Link6},
+                {"alttext", Model.AltText6 }
+            };
+
+            @await Html.PartialAsync("~/Plugins/Widgets.NivoSlider/Views/_PublicInfo.SliderLine.cshtml", dataSlide6)
+        }
     </div>
 </div>
 <script asp-location="Footer">

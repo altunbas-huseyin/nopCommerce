@@ -65,12 +65,18 @@ namespace Nop.Plugin.Widgets.NivoSlider.Components
                 Picture5Url = GetPictureUrl(nivoSliderSettings.Picture5Id),
                 Text5 = nivoSliderSettings.Text5,
                 Link5 = nivoSliderSettings.Link5,
-                AltText5 = nivoSliderSettings.AltText5
+                AltText5 = nivoSliderSettings.AltText5,
+                
+                Picture6Url = GetPictureUrl(nivoSliderSettings.Picture6Id),
+                Text6 = nivoSliderSettings.Text6,
+                Link6 = nivoSliderSettings.Link6,
+                AltText6 = nivoSliderSettings.AltText6,
             };
 
             if (string.IsNullOrEmpty(model.Picture1Url) && string.IsNullOrEmpty(model.Picture2Url) &&
-                string.IsNullOrEmpty(model.Picture3Url) && string.IsNullOrEmpty(model.Picture4Url) &&
-                string.IsNullOrEmpty(model.Picture5Url))
+                string.IsNullOrEmpty(model.Picture3Url) && string.IsNullOrEmpty(model.Picture4Url) && string.IsNullOrEmpty(model.Picture6Url) &&
+                string.IsNullOrEmpty(model.Picture5Url  
+                ))
                 //no pictures uploaded
                 return Content("");
 

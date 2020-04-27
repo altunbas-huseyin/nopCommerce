@@ -77,5 +77,20 @@ namespace Nop.Plugin.Widgets.NivoSlider.Models
         [NopResourceDisplayName("Plugins.Widgets.NivoSlider.AltText")]
         public string AltText5 { get; set; }
         public bool AltText5_OverrideForStore { get; set; }
+        
+        
+        [NopResourceDisplayName("Plugins.Widgets.NivoSlider.Picture")]
+        [UIHint("Picture")]
+        public int Picture6Id { get; set; }
+        public bool Picture6Id_OverrideForStore { get; set; }
+        [NopResourceDisplayName("Plugins.Widgets.NivoSlider.Text")]
+        public string Text6 { get; set; }
+        public bool Text6_OverrideForStore { get; set; }
+        [NopResourceDisplayName("Plugins.Widgets.NivoSlider.Link")]
+        public string Link6 { get; set; }
+        public bool Link6_OverrideForStore { get; set; }
+        [NopResourceDisplayName("Plugins.Widgets.NivoSlider.AltText")]
+        public string AltText6 { get; set; }
+        public bool AltText6_OverrideForStore { get; set; }
     }
 }
