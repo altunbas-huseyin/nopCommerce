@@ -21,6 +21,8 @@ using Nop.Services.Orders;
 using Nop.Services.Payments;
 using Nop.Services.Plugins;
 using Nop.Services.Tax;
+using Nop.Web.Framework;
+
 namespace Nop.Plugin.Payments.MinburPayment
 {
     /// <summary>
@@ -387,6 +389,20 @@ namespace Nop.Plugin.Payments.MinburPayment
 
             var url = QueryHelpers.AddQueryString(baseUrl, queryParameters);
             _httpContextAccessor.HttpContext.Response.Redirect(url);
+
+
+            var post = new RemotePost
+            {
+                FormName = "alipaysubmit",
+                Url = "https://www.alipay.com/cooperate/gateway.do?_input_charset=utf-8",
+                Method = "POST"
+            };
+
+            post.Add("sign_type", "imza");
+
+            post.Post();
+
+
         }
 
         /// <summary>
